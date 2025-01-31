@@ -13,7 +13,7 @@ for i,char in enumerate(s):
             s1=s1+q+char
     else:
         count=count+1  
-print(" string:'a,b,c,d,e,f' after using split function")    
+print(" string after using split function")    
 print(s1)
 s2=""
 count2=0
