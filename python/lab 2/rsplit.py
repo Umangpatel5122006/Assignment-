@@ -29,7 +29,7 @@ for i in range (len(s)-1,-1,-1):
     else:
         count2=count2+1 
 s3=s2[::-1]  
-print(" string:'a,b,c,d,e,f' after using rsplit function")   
+print("  after using rsplit function")   
 print(s3)
 
 
