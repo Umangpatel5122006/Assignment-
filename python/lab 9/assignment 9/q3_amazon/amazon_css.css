@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    height:60px;
+    justify-content: space-evenly;
+}
+.logoofamazon a{
+    height: 60px;
+    width: 106.66px;
+    display: flex;
+}
+.location{
+    height: 60px;
+    width: 200px;
+    display: flex;
+}
+.loc_logo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.local_disc{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.default{
+    margin-top: 10px;
+    color: white;
+}
+.y_location{
+    color: white;
+    font-size: 12px;
+}
+.search{
+    height: 40px;
+    width: 500px;
+    max-width: 700px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-self:center;
+    align-self: center;
+    background-color: white;   
+}
+.cate{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    width: 12%;
+    left: 7px;
+    margin-right: 0px;    
+}
+.find{
+    position:relative;
+    display: flex;
+    right: 5px;
+    width: 88%;
+    flex-direction: row;
+}
+.search-bar{
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.search-logo{
+    display: flex;
+    height: 100%;
+    border: none;
+    padding-left: 0px;
+    align-self:flex-start;
+}
+.lang{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    height: 15px;
+    margin-left: 10px;
+    padding-right: 2px;
+    align-self: center;
+    color: white;
+    font: 100;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-self: center;
+    height: 100%;
+    top: 100px;
+    justify-items: center;
+    
+}
+.acc_list a, .return a {
+    position: relative;       /* Keeps the relative positioning */
+    display: flex;            /* Flexbox for centering */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    width: 100%;
+    height: 100%;
+    text-decoration: none;    /* Keeps the links clean */
+    color: white;             /* Text color */
+}
+.acc_list {
+    width: 40%;
+    padding-right:50px;
+
+}
+.return {
+    width: 60%;
+}
+.low{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 31, 74);
+    height:40px;
+    justify-content: space-evenly;
+}
+.all a{
+    position: relative;       
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    width: 100%;
+    height: 100%;
+    text-decoration: none;    
+    color: white;
+}
+
+.main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-image: url('main.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25%;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    
+.hor_photo img{
+    width: 50%;
+    height: 50%;
+}
+.hor_photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#deco img{
+    width: 50%;
+    height: 93.54px;
+    padding-top: 0%;    
+}
+#deco{
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center content evenly */
+        align-items: center; /* Align items properly */
+        flex-wrap: wrap; /* Ensure items flow to the next row */
+        gap: 0; /* Set gap to zero to avoid extra spacing */   
+}
+#book img{
+    width: 150px;
+    height: 93.54px;
+   
+}
+#book{
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center content evenly */
+        align-items: center; /* Align items properly */
+        flex-wrap: wrap; /* Ensure items flow to the next row */
+        gap: 0; /* Set gap to zero to avoid extra spacing */   
+}
+}

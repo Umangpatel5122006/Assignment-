@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: url(zmto.avif);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Ensure absolute positioning for child elements */
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent unwanted scrolling */
+    font-family: 'Arial', sans-serif;
+    display: inline-block;
+}
+
+.main_image {
+    width: 100%; /* Image spans the full width */
+    height: 75%; /* Image spans the full height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.text_on_pic {
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    color: rgb(237, 237, 237);
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+}
+#moto{
+    font-size: 45px;
+}
+
+#below_pic {
+    display: flex; /* Enables flexible layout */
+    justify-content: space-evenly; /* Distributes images evenly */
+    align-items: center; /* Aligns images vertically */
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Adds spacing inside the container */
+    margin: 0 auto; /* Centers the container */
+    height: 95%;
+}
+.container1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Customize font size */
+}
+
+.image2 {
+    width: 180px; /* Adjust the size as needed */
+    height: auto;
+}
+#pic{
+    height:120px;
+    width: 100px;
+}
+
+.image {
+    width: 23%; /* Adjust width to fit all images in a line */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Prevents distortion */
+}
+#temp_gap{
+    margin-right: 20px;
+}
+
+
+.linke {
+    display: flex; /* Enables flexible layout */
+    justify-content: right; /* Centers the links */
+    align-items: center; /* Aligns the links vertically */
+    height: 30px;
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Adds spacing inside the container */
+    margin: 0 auto; /* Centers the container */
+    color: rgb(255, 255, 255); /* White text color */
+    font-size: 20px; /* Customize font size */
+    font-weight: bold; /* Bold text */
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(255, 255, 255); /* White color for text */
+    margin-left: 20px; /* Add spacing between links */
+    font-size: 18px; /* Make links readable */
+    font-weight: bold;
+}
+
+
+.search-optns{
+    display: flex;
+    height: 200px;
+    justify-content: row;
+    justify-content: center;
+}
+
+.search{
+    width: 90%;
+    height: 50px;
+    max-width: 770px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.search select{
+    
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+}
+.search-bar{
+    width: 600px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    
+}
