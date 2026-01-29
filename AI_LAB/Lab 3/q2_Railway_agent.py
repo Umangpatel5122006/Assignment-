@@ -44,10 +44,10 @@ class Railway_agent:
         self.after_action_to_environment(1, 1, 1) # Gate Lowered, Siren On, Signal Red (Emergency Stop)
 
     def none_effect(self):
-        # For 'NONE', assume safe state (gates raised, siren off, signal red)
+        # For 'NONE',assume safe state (gates raised, siren off, signal red)
         self.after_action_to_environment(0, 0, 1)
 
-    def execute_chosen_action(self): # Renamed from 'execute'
+    def execute_chosen_action(self):
         if self.chosen_action == 'train_incoming':
             self.train_incoming_effect()
         elif self.chosen_action == 'train_gone':
@@ -110,7 +110,6 @@ class Simulation:
             print(f"  Environment (After Action): {record['environment_after_action']}")
 
 # Rules: (In, Out, Box, Man)
-
 ruletable = {
     # Manual Emergency (High Priority)
     (1, 0, 0, 1): 'emergency',
@@ -155,15 +154,11 @@ scenarios = [
     ("All Conditions (Train, Obstacle, Emergency)", (1, 1, 1))
 ]
 
-# Make sure Environment and ruletable are defined (from previous cells)
-# Environment (cell SwHsDA3ks-CK)
-# ruletable (cell Eh9MC8dywRcL)
 
-# Instantiate the Railway_agent
+
+
 agent = Railway_agent(Environment, ruletable)
 
-# Define scenarios for the simulation
-# Each scenario is a dictionary representing the state of inbound, outbound, obstacle, and manual sensors
 scenarios = [
     {"inbound": 0, "outbound": 0, "obstacle": 0, "manual": 0}, # 1. Initial State / No Train / Clear / No Manual
     {"inbound": 1, "outbound": 0, "obstacle": 0, "manual": 0}, # 2. Train Incoming / Clear / No Manual
@@ -174,7 +169,7 @@ scenarios = [
     {"inbound": 1, "outbound": 0, "obstacle": 0, "manual": 1}  # 7. Train Incoming / Clear / Manual Active
 ]
 
-# Instantiate and run the Simulation
+
 sim = Simulation(agent)
 sim.start(scenarios)
 
